@@ -1,0 +1,11 @@
+﻿{
+	"name": "RedFox.SmartButton.Editor",
+	"references": [
+        "RedFox.SmartButton"
+    ],
+	"optionalUnityReferences": [],
+	"includePlatforms": [
+        "Editor"
+    ],
+	"excludePlatforms": []
+}
