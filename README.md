@@ -13,10 +13,12 @@ The package provides all three of these event types and some additional, just li
 - **On Click**: Just like on the original button, sends the signal if the button release was over the button.
 - **On Press**: Sends the signal after the putton was pressed.
 - **On Hold**: Sends signals while the button is held down.
-- **On Release**: Sends the signal after the button was released (pointer was over the button, and not left it since press)
+- **On Release**: Sends the signal after the button was released (pointer was over the button when pushed, but release can be anywhere)
 - **On Exit**: Sends the signal if the pointer leaves the button area.
 - **On Enter**: Sends the signal if the pointer enters the button area.<br>
 (Note: That onExit/onEnter is called despite no press or click happened because you still left/enter the button area.)
+
+![Demonstration](https://github.com/Menyus777/RedFox-Smart-Button/blob/develop/imgs/demonstration.gif)
 
 ### How to Install
 
