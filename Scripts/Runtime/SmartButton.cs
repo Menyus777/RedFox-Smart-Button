@@ -15,7 +15,8 @@ namespace RedFox.InputManagement.ExtendedUI
     /// <item><term>On Press</term><description> Called when the button is pressed.</description></item>
     /// <item><term>On Hold</term><description> Called when the button is being held down.</description></item>
     /// <item><term>On Release</term><description> Called when the button is released. (The pointer was over the button)</description></item>
-    /// <item><term>On Exit</term><description> Called when the pointer was released or left the button border.</description></item>
+    /// <item><term>On Exit</term><description> Called when the pointer leaves the button area.</description></item>
+    /// <item><term>On Enter</term><description> Called when the pointer enters the button area.</description></item>
     /// </list>
     /// </summary>
     /// <remarks>This component depends on <see cref="TouchInputHandler"/> remove code dependecies to make it work without it.</remarks>
@@ -45,11 +46,18 @@ namespace RedFox.InputManagement.ExtendedUI
         private ButtonReleaseEvent onRelease = new ButtonReleaseEvent();
 
         /// <summary>
-        /// UnityEvent to be fired when the pointer leaves the button. (Leaving or releasing the button with the pointer).
+        /// UnityEvent to be fired when the pointer leaves the button area.
         /// </summary>
         public ButtonExitEvent OnExit { get { return onExit; } set { onExit = value; } }
         [SerializeField]
         private ButtonExitEvent onExit = new ButtonExitEvent();
+
+        /// <summary>
+        /// UnityEvent to be fired when the pointer enters the button area.
+        /// </summary>
+        public ButtonExitEvent OnEnter { get { return onEnter; } set { onEnter = value; } }
+        [SerializeField]
+        private ButtonExitEvent onEnter = new ButtonExitEvent();
 
         public override void OnPointerDown(PointerEventData eventData)
         {
@@ -78,6 +86,14 @@ namespace RedFox.InputManagement.ExtendedUI
             base.OnPointerExit(eventData);
             holding = false;
             onExit.Invoke();
+
+            InstantClearState();
+        }
+
+        public override void OnPointerEnter(PointerEventData eventData)
+        {
+            base.OnPointerEnter(eventData);
+            onEnter.Invoke();
 
             InstantClearState();
         }
@@ -114,6 +130,15 @@ namespace RedFox.InputManagement.ExtendedUI
         /// </summary>
         [Serializable]
         public class ButtonExitEvent : UnityEvent
+        {
+
+        }
+
+        /// <summary>
+        /// Method definition for a button enter event.</para>
+        /// </summary>
+        [Serializable]
+        public class ButtonEnterEvent : UnityEvent
         {
 
         }

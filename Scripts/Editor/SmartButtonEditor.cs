@@ -13,7 +13,8 @@ namespace RedFox.EditorExtensions.InputManagement.ExtendedUI
     /// <item><term>On Press</term><description> Called when the button is pressed.</description></item>
     /// <item><term>On Hold</term><description> Called when the button is being held down.</description></item>
     /// <item><term>On Release</term><description> Called when the button is released. (The pointer was over the button)</description></item>
-    /// <item><term>On Exit</term><description> Called when the pointer was released or left the button border.</description></item>
+    /// <item><term>On Exit</term><description> Called when the pointer leaves the button area.</description></item>
+    /// <item><term>On Enter</term><description> Called when the pointer enters the button area.</description></item>
     /// </list>
     /// </summary>
     [CanEditMultipleObjects]
@@ -24,6 +25,7 @@ namespace RedFox.EditorExtensions.InputManagement.ExtendedUI
         SerializedProperty onHoldProperty;
         SerializedProperty onReleaseProperty;
         SerializedProperty onExitProperty;
+        SerializedProperty onEnterProperty;
 
         protected override void OnEnable()
         {
@@ -32,6 +34,7 @@ namespace RedFox.EditorExtensions.InputManagement.ExtendedUI
             onHoldProperty = serializedObject.FindProperty("onHold");
             onReleaseProperty = serializedObject.FindProperty("onRelease");
             onExitProperty = serializedObject.FindProperty("onExit");
+            onEnterProperty = serializedObject.FindProperty("onEnter");
         }
 
         public override void OnInspectorGUI()
@@ -43,6 +46,7 @@ namespace RedFox.EditorExtensions.InputManagement.ExtendedUI
             EditorGUILayout.PropertyField(onHoldProperty);
             EditorGUILayout.PropertyField(onReleaseProperty);
             EditorGUILayout.PropertyField(onExitProperty);
+            EditorGUILayout.PropertyField(onEnterProperty);
             serializedObject.ApplyModifiedProperties();
         }
     }
