@@ -11,7 +11,7 @@ The package provides all three of these event types and some additional, just li
 ### Features
 - Easy to use interface just like the traditional UI Button.
 - **On Click**: Just like on the original button, sends the signal if the button release was over the button.
-- **On Press**: Sends the signal after the putton was pressed.
+- **On Press**: Sends the signal after the button was pressed.
 - **On Hold**: Sends signals while the button is held down.
 - **On Release**: Sends the signal after the button was released (pointer was over the button when pushed, but release can be anywhere)
 - **On Exit**: Sends the signal if the pointer leaves the button area.
