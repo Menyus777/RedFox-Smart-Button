@@ -18,7 +18,7 @@ The package provides all three of these event types and some additional, just li
 - **On Enter**: Sends the signal if the pointer enters the button area.<br>
 (Note: That onExit/onEnter is called despite no press or click happened because you still left/enter the button area.)
 
-![Demonstration](https://github.com/Menyus777/RedFox-Smart-Button/blob/develop/imgs/demonstration.gif)
+<p align="center"><img src="https://github.com/Menyus777/RedFox-Smart-Button/blob/develop/imgs/demonstration.gif" alt="Demonstration" width="575" height="525"></p>
 
 ### How to Install
 
@@ -34,4 +34,4 @@ The package provides all three of these event types and some additional, just li
 3. Click on Add Component > RedFox UI > Smart Button
 4. Add events just you would add onClick events :)
 
-![How to Use](https://github.com/Menyus777/RedFox-Smart-Button/blob/develop/imgs/how-to-use.gif)
+<p align="center"><img src="https://github.com/Menyus777/RedFox-Smart-Button/blob/develop/imgs/how-to-use.gif" alt="How to Use"></p>
