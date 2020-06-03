@@ -94,8 +94,6 @@ namespace RedFox.InputManagement.ExtendedUI
         {
             base.OnPointerEnter(eventData);
             onEnter.Invoke();
-
-            InstantClearState();
         }
 
         /// <summary>
