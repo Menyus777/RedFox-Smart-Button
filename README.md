@@ -32,3 +32,4 @@ The package provides all three of these event types and some additional, just li
 3. Click on Add Component > RedFox UI > Smart Button
 4. Add events just you would add onClick events :)
 
+![How to Use](https://github.com/Menyus777/RedFox-Smart-Button/blob/develop/imgs/how-to-use.gif)
