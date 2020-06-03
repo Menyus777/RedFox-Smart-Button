@@ -6,7 +6,7 @@ This package contains an extended version of the built-in Unity button. While th
 
 Events like: Holding, Pressed, Released.
 
-The package provides all three of these event types, just like Unity provides onClick event.
+The package provides all three of these event types and some additional, just like Unity provides onClick event.
 
 ### Features
 - Easy to use interface just like the traditional UI Button.
