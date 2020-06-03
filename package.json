@@ -1,6 +1,6 @@
 {
   "name": "com.redfox-interactive.smartbutton",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "displayName": "RedFox SmartButton",
   "description": "Adds common button events to standard Unity buttons.",
   "unity": "2019.3",
