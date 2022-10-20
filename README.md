@@ -1,5 +1,9 @@
 # <p align="center">RedFox Smart Button</p>
 
+## This package is no longer supported
+I recommend using event triggers to achive the same result as this package provides.
+https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/script-EventTrigger.html
+
 ### Description
 
 This package contains an extended version of the built-in Unity button. While the built-in Unity button is fine for the most common scenarios, it lacks some event types that buttons usually support.
